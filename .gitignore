@@ -3,6 +3,12 @@
 
 # Ignore a pasta node_modules
 node_modules
+kubernetes
+docker/volumes/minio/data
+docker/volumes/nifi/content_repository
+docker/volumes/nifi/flowfile_repository
+docker/volumes/nifi/provenance_repository
+docker/volumes/nifi/database_repository
 
 # Ignore todos os arquivos de texto
 *.txt

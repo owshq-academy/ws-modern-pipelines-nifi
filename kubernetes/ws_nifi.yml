@@ -134,7 +134,7 @@ spec:
             - containerPort: 5432
           volumeMounts:
             - name: pgdata
-              mountPath: /data/postgres
+              mountPath: /nifi.properties/postgres
       volumes:
         - name: pgdata
           emptyDir: {}
