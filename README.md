@@ -20,9 +20,9 @@
 Escolha instalar no Docker ou Minikube
 
 
-**1- Clonar repositório**
+**1- Clonar repositório** (Opcional)
 ```bash
-xxxxxxxxxxxxxxxxx
+https://github.com/owshq-academy/ws-modern-pipelines-nifi.git
 ````
 
 **2- Instalar Docker**
@@ -76,11 +76,11 @@ http://127.0.0.1:18080/nifi-registry
 
 ![img_1.png](image/novo_bucket.png)
 #
-- Abra o Nifi >> Menu Sandwich >> Controller Settings
+- Abra o Nifi >> Menu Global >> Controller Settings
 
 ![img_2.png](image/controller_settings.png)
 #
-- Na guia Registry Clients, adicione um nome para o registry
+- Na guia Registry Clients, insira um nome para o registry
 
 ![img.png](image/regystri.png)
 #
