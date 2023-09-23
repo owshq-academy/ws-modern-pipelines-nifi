@@ -5,19 +5,22 @@ services:
     image: apache/nifi:latest
     container_name: nifi
     ports:
-      - '8080:8080'
+      - '8443:8443'
     volumes:
       - ./volumes/nifi/jdbc:/opt/jdbc
       - ./volumes/nifi/data:/opt/nifi/data
       - ./volumes/nifi/properties:/opt/nifi/nifi-current/properties  #credentials.properties
+      #- ./volumes/nifi/conf:/opt/nifi/nifi-current/conf
       - ./volumes/nifi/database_repository:/opt/nifi/nifi-current/database_repository
       - ./volumes/nifi/flowfile_repository:/opt/nifi/nifi-current/flowfile_repository
       - ./volumes/nifi/content_repository:/opt/nifi/nifi-current/content_repository
       - ./volumes/nifi/provenance_repository:/opt/nifi/nifi-current/provenance_repository
     environment:
-      NIFI_WEB_HTTP_PORT: 8080
-      #SINGLE_USER_CREDENTIALS_USERNAME: admin
-      #SINGLE_USER_CREDENTIALS_PASSWORD: 000000000000  #minimo de 12 caracteres
+      NIFI_WEB_HTTPS_PORT: 8443
+      SINGLE_USER_CREDENTIALS_USERNAME: admin
+      SINGLE_USER_CREDENTIALS_PASSWORD: 123456789012
+      #https://localhost:8443/nifi/
+      #./bin/nifi.sh set-single-user-credentials admin "123456789012"
 
 
   nifi-registry:

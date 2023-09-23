@@ -7,7 +7,7 @@
 <div style="display: inline_block"><br>
   <img align="center" height="800" width="800" src="./image/roadmap.png">
 </div>
-
+![img.png](img.png)
 
 **Requisitos**
 - 2 CPUs or more
@@ -95,13 +95,25 @@ http://127.0.0.1:18080/nifi-registry
 
 7- Configurar a conexãom com Postgres
 
+- Configure o Controller Service: DBCPConnectionPool
 - jdbc:postgresql://postgres:5432/postgres
 - org.postgresql.Driver
 - /opt/jdbc/postgresql-42.5.2.jar
 - usr: postgres
 - pws: postgres123
 
-
+CREATE TABLE device (
+    id INTEGER,
+    uid UUID,
+    build_number INTEGER,
+    manufacturer VARCHAR(255),
+    model VARCHAR(255),
+    platform VARCHAR(255),
+    serial_number VARCHAR(255),
+    version INTEGER,
+    user_id INTEGER,
+    dt_current_timestamp BIGINT
+);
 
 ![img.png](image/configure_controller_service_postgres.png)
 
@@ -124,18 +136,7 @@ http://127.0.0.1:18080/nifi-registry
 </div>
 
 
-CREATE TABLE device (
-    id INTEGER,
-    uid UUID,
-    build_number INTEGER,
-    manufacturer VARCHAR(255),
-    model VARCHAR(255),
-    platform VARCHAR(255),
-    serial_number VARCHAR(255),
-    version INTEGER,
-    user_id INTEGER,
-    dt_current_timestamp BIGINT
-);
+
 
 
 
