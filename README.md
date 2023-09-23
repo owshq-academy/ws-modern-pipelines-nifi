@@ -7,7 +7,6 @@
 <div style="display: inline_block"><br>
   <img align="center" height="800" width="800" src="./image/roadmap.png">
 </div>
-![img.png](img.png)
 
 **Requisitos**
 - 2 CPUs or more
