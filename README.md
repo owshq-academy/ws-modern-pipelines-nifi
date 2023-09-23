@@ -60,7 +60,10 @@ minikube tunnel
 #
 **4- Acessar o Nifi:**
 
-http://127.0.0.1:8080/nifi
+https://localhost:8443/nifi/
+usr: admin
+pws: 123456789012
+
 #
 **5- Acessar o Nifi-Registry:**
 
