@@ -10,7 +10,6 @@ services:
       - ./volumes/nifi/jdbc:/opt/jdbc
       - ./volumes/nifi/data:/opt/nifi/data
       - ./volumes/nifi/properties:/opt/nifi/nifi-current/properties  #credentials.properties
-      #- ./volumes/nifi/conf:/opt/nifi/nifi-current/conf
       - ./volumes/nifi/database_repository:/opt/nifi/nifi-current/database_repository
       - ./volumes/nifi/flowfile_repository:/opt/nifi/nifi-current/flowfile_repository
       - ./volumes/nifi/content_repository:/opt/nifi/nifi-current/content_repository

@@ -99,11 +99,11 @@ http://127.0.0.1:18080/nifi-registry
 7- Configurar a conexãom com Postgres
 
 - Configure o Controller Service: DBCPConnectionPool
-- jdbc:postgresql://postgres:5432/postgres
-- org.postgresql.Driver
-- /opt/jdbc/postgresql-42.5.2.jar
-- usr: postgres
-- pws: postgres123
+- Database Connection URL: jdbc:postgresql://postgres:5432/postgres
+- Database Driver Class Name: org.postgresql.Driver
+- Database Drive Location(s): /opt/jdbc/postgresql-42.5.2.jar
+- Database User: postgres
+- Password: postgres123
 
 CREATE TABLE device (
     id INTEGER,
