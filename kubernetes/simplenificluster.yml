@@ -64,9 +64,6 @@ spec:
       - containerPort: 8080
         type: http
         name: http
-      - containerPort: 8443
-        type: https
-        name: https
       - containerPort: 6007
         type: cluster
         name: cluster

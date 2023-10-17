@@ -78,12 +78,22 @@ helm install zookeeper bitnami/zookeeper \
 
 **12-Subir o cluster nifi**
 ```bash
-kubectl create -n nifi -f simplenificluster.yaml
+kubectl create -n nifi -f simplenificluster.yml
 ```
 
 
 #BÔNUS
+
 #Comando Kubernetes
+
+**Verificar contaiers**
+```bash 
+kubectl get pods -n nifi
+```
+**Exibir o IP para acesso Externo. Utilizar o IP EXterno. (Exemplo: http://34.43.128.10/nifi)**
+```bash
+kubectl get service -n nifi
+```
 **Iniciar o shell no contêiner**
 ```bash 
 kubectl exec -u 0 -it -n nifi nome_do_pod sh
@@ -92,10 +102,7 @@ kubectl exec -u 0 -it -n nifi nome_do_pod sh
 ```bash
 kubectl describe pod nome_do_pod -n nifi
 ```
-**Exibir o IP para acesso Externo. Utilizar o IP EXterno. (Exemplo: http://34.43.128.10/nifi)**
-```bash
-kubectl get service -n nifi
-```
+
 
 #Fonte
 **https://konpyutaika.github.io/nifikop/**
