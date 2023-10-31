@@ -28,6 +28,7 @@ services:
 #      ./bin/nifi.sh set-single-user-credentials admin "123456789012"
 
 
+
 #controle de versão para o nifi
   nifi-registry:
     image: apache/nifi-registry:latest

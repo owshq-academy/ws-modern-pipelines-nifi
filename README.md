@@ -60,7 +60,7 @@ minikube tunnel
 #
 **4- Acessar o Nifi:**
 
-https://localhost:8443/nifi/
+http://localhost:8443/nifi/
 #
 - usr: admin
 - pws: 123456789012
