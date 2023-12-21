@@ -3,7 +3,7 @@ version: '3.7'
 services:
 #Data Flow
   nifi:
-    image: apache/nifi:latest
+    image: apache/nifi:1.24.0
     container_name: nifi
     ports:
       - '8443:8443'
@@ -31,7 +31,7 @@ services:
 
 #controle de versão para o nifi
   nifi-registry:
-    image: apache/nifi-registry:latest
+    image: apache/nifi-registry:1.24.0
     container_name: nifi-registry
     ports:
       - '18080:18080'
